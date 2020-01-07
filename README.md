@@ -1,6 +1,6 @@
 # Object Oriented Programming
 
-### Mission
+## Mission
 
 This guide was developed to help members from Skyrats - Autonomous Drones Team from Escola Politécnica da Universidade de São Paulo - to understand the concepts of object oriented programming in C++.
 
