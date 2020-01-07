@@ -49,3 +49,13 @@ If that may be an issue, you can easily follow this guide using an IDE (Codebloc
 ## Data Persistence
 
 ## Namespace, Templates and Standard Libraries
+
+## Reference
+
+The reference to this guide is mostly based on a discipline (PCS3111 - Laboratório de Programação Orientada à Objetos para Engenharia Elétrica) given by the **Computer Engineering and Digital Systems Department (PCS)** from **Escola Politécnica da Universidade de São Paulo** to Electrical Enginerring Students on their second semester. 
+
+The complete material is available, in Portuguese, in this repository.
+
+#### Useful Links
+
+<a href="https://docs.google.com/document/d/136qoVExYsV5zqmuF49-Rm3RgqCdc9mjc4prDhwLXV2U/edit">Plot</a> written to help the workshop given in 12/22/2019.
