@@ -63,10 +63,34 @@ For example, we can think in a class called "car" and create objects that may ha
 
 <img
     src="images/clssobjc.png"
-    alt="class represent"
+    alt="class representation"
 />
 
-the image above shows how a <code>Car</code> object can be the template for many other <code>Car</code> instances. A class not only can define a <code>Car</code> object's atributtes (color, number of passengers it can take, etc), but it also can define how it is going to work, or what are going to be its methods (operations). For example, we could create a method <code>accelerate</code> that changes the object's current speed.
+The image above shows how a <code>Car</code> object can be the template for many other <code>Car</code> instances. A class not only can define a <code>Car</code> object's atributtes (color, number of passengers it can take, etc), but it also can define how it is going to work, or what are going to be its methods (operations). For example, we could create a method <code>accelerate</code> that changes the object's current speed.
+
+### Object
+
+An object is simply an instance of a class, an element of the computer system. It has its singular characteristcs as *Behavior*, *State* and *Identity*.
+
+Example: Lamp
+
+* Behavior - Turn On, Turn Off, getState.
+* State - On, Off.
+* Identity - Living Room Lamp.
+
+### Attribute
+
+An attribute is basically a class' property. It represents the data.
+
+### Operation
+
+An operation is just specifies which functionality an object supports, but it has no implementation. It is similar to a function prototype as we usually see in C language.
+
+### Method
+
+A method is a implementation of an operation. 
+
+**Note:** We usually don't use the term operation, we refer as methods.
 
 ## Encapsulation
 
