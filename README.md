@@ -109,6 +109,12 @@ By default the class members are `private`. So if the visibility labels are miss
 
 In inheritance, it is important to know when a member function in the base class can be used by the objects of the derived class. This is called accessibility and the access specifiers are used to determine this.
 
+### Getters and Setter Methods
+
+### Definition: ".hpp" and ".cpp" Files
+
+### Object Vector
+
 ## 3 - Constructors and Destructors
 
 ## 4 - Inheritance and Polymorphism
@@ -182,3 +188,5 @@ The complete material is available, in Portuguese, in this repository.
 #### Useful Links
 
 <a href="https://docs.google.com/document/d/136qoVExYsV5zqmuF49-Rm3RgqCdc9mjc4prDhwLXV2U/edit">Plot</a> written to help the workshop given in 12/22/2019.
+
+<a href="http://www.trytoprogram.com/cplusplus-programming/access-specifiers/">OOP reference</a>
