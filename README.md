@@ -107,7 +107,11 @@ For example, the class members are grouped into sections, `private` `protected` 
 
 By default the class members are `private`. So if the visibility labels are missing then by default all the class members are `private`.
 
-In inheritance, it is important to know when a member function in the base class can be used by the objects of the derived class. This is called accessibility and the access specifiers are used to determine this.
+In inheritance (we will discuss this later in other topics), it is important to know when a member function in the base class can be used by the objects of the derived class. This is called accessibility and the access specifiers are used to determine this.
+
+* `public` = objects from **any** other class can access
+* `private` = access restricted only to objects from the class
+* `protected` = access restricted only to objects from the class and its derived classes
 
 ### Getters and Setter Methods
 
