@@ -95,6 +95,20 @@ A method is a implementation of an operation.
 
 ## 2 - Encapsulation
 
+A good habbit to have when programming is to separate your code in modules. One of the modularity principles is the *Data Hiding*, it is useful because it hides the module details from ther modules. So it separates the purpose of your implementation and also retriscts access to other implementation details to any other data structure from the module.
+
+Here in OOP the *Data Hiding* is called *Encapsulation*. To be more clear, it let us hide unecessary details from other classes which are not needed to understand the characteristcs of the class we are working at the moment.
+
+### Access Specifiers
+
+Access specifiers are used for determining or setting the boundary for the availability of class members (data members and member functions) beyond that class.
+
+For example, the class members are grouped into sections, `private` `protected` and `public`. These keywords are called access specifiers which define the accessibility or visibility level of class members.
+
+By default the class members are `private`. So if the visibility labels are missing then by default all the class members are `private`.
+
+In inheritance, it is important to know when a member function in the base class can be used by the objects of the derived class. This is called accessibility and the access specifiers are used to determine this.
+
 ## 3 - Constructors and Destructors
 
 ## 4 - Inheritance and Polymorphism
