@@ -20,17 +20,18 @@ If that may be an issue, you can easily follow this guide using an IDE (Codebloc
 
 ## Contents
 
-* Definition and Paradigms
-* Concepts
-* Encapsulation
-* Constructors and Destructors
-* Inheritance and Polymorphism
-* Abstract Classes and Multiple Inheritance
-* Defensive Programming
-* Data Persistence
-* Namespace, Templates and Standard Libraries
+1. Definition and Paradigms
+2. Concepts
+3. Encapsulation
+4. Constructors and Destructors
+5. Inheritance and Polymorphism
+6. Abstract Classes and Multiple Inheritance
+7. Defensive Programming
+8. Data Persistence
+9. Namespace, Templates and Standard Libraries
+10. Examples (commented)
 
-## Definition and Paradigms
+## 1 - Definition and Paradigms
 
 Developing software does not envolve only a programming language itself, a good aspect to consider when developing anything is the programming paradigm, or the "way" of programming. 
 
@@ -92,11 +93,31 @@ A method is a implementation of an operation.
 
 **Note:** We usually don't use the term operation, we refer as methods.
 
-### Example
+## 2 - Encapsulation
+
+## 3 - Constructors and Destructors
+
+## 4 - Inheritance and Polymorphism
+
+## 5 - Abstract Classes and Multiple Inheritance
+
+## 6 - Defensive Programming
+
+## 7 - Data Persistence
+
+## 8 - Namespace, Templates and Standard Libraries
+
+## 9 - Reference
+
+The reference to this guide is mostly based on a discipline (PCS3111 - Laboratório de Programação Orientada à Objetos para Engenharia Elétrica) given by the **Computer Engineering and Digital Systems Department (PCS)** from **Escola Politécnica da Universidade de São Paulo** to Electrical Enginerring Students on their second semester. 
+
+The complete material is available, in Portuguese, in this repository.
+
+### 10 - Examples (commented)
 
 The Following code shows how a class is defined in C++.
 
-```
+```c++
 #include <iostream>
 
 using namespace std;
@@ -118,7 +139,7 @@ class Lampada {
 
 Now let's see how the class' methods were implemented in this case.
 
-```
+```c++
 Lampada::Lampada(){
     acesa = false;
     cout << "objeto construido com sucesso" << endl;
@@ -141,26 +162,6 @@ void Lampada::imprimir() {
 }
 
 ```
-
-## Encapsulation
-
-## Constructors and Destructors
-
-## Inheritance and Polymorphism
-
-## Abstract Classes and Multiple Inheritance
-
-## Defensive Programming
-
-## Data Persistence
-
-## Namespace, Templates and Standard Libraries
-
-## Reference
-
-The reference to this guide is mostly based on a discipline (PCS3111 - Laboratório de Programação Orientada à Objetos para Engenharia Elétrica) given by the **Computer Engineering and Digital Systems Department (PCS)** from **Escola Politécnica da Universidade de São Paulo** to Electrical Enginerring Students on their second semester. 
-
-The complete material is available, in Portuguese, in this repository.
 
 #### Useful Links
 
