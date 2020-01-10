@@ -129,53 +129,55 @@ The complete material is available, in Portuguese, in this repository.
 
 ## 10 - Examples (commented)
 
-The Following code shows how a class is defined in C++.
 
-```c++
-#include <iostream>
 
-using namespace std;
+1. The Following code shows how a class is defined in C++.
 
-class Lampada {
-    public:
-        Lampada();
-        ~Lampada();
+    ```c++
+    #include <iostream>
 
-        void ligar();
-        void desligar();
-        void imprimir();
-        
-    private:
-        bool acesa;
-        double potencia;
-};
-```
+    using namespace std;
 
-Now let's see how the class' methods were implemented in this case.
+    class Lampada {
+        public:
+            Lampada();
+            ~Lampada();
 
-```c++
-Lampada::Lampada(){
-    acesa = false;
-    cout << "objeto construido com sucesso" << endl;
-}
+            void ligar();
+            void desligar();
+            void imprimir();
+            
+        private:
+            bool acesa;
+            double potencia;
+    };
+    ```
 
-Lampada::~Lampada(){
-    cout << "Lampada destruida" << endl;
-}
+    Now let's see how the class' methods were implemented in this case.
 
-void Lampada::ligar() {
-    acesa = true;
-}
+    ```c++
+    Lampada::Lampada(){
+        acesa = false;
+        cout << "objeto construido com sucesso" << endl;
+    }
 
-void Lampada::desligar() {
-    acesa = false;
-}
+    Lampada::~Lampada(){
+        cout << "Lampada destruida" << endl;
+    }
 
-void Lampada::imprimir() {
-    cout << acesa << endl;
-}
+    void Lampada::ligar() {
+        acesa = true;
+    }
 
-```
+    void Lampada::desligar() {
+        acesa = false;
+    }
+
+    void Lampada::imprimir() {
+        cout << acesa << endl;
+    }
+
+    ```
 
 #### Useful Links
 
