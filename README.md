@@ -92,6 +92,56 @@ A method is a implementation of an operation.
 
 **Note:** We usually don't use the term operation, we refer as methods.
 
+### Example
+
+The Following code shows how a class is defined in C++.
+
+```
+#include <iostream>
+
+using namespace std;
+
+class Lampada {
+    public:
+        Lampada();
+        ~Lampada();
+
+        void ligar();
+        void desligar();
+        void imprimir();
+        
+    private:
+        bool acesa;
+        double potencia;
+};
+```
+
+Now let's see how the class' methods were implemented in this case.
+
+```
+Lampada::Lampada(){
+    acesa = false;
+    cout << "objeto construido com sucesso" << endl;
+}
+
+Lampada::~Lampada(){
+    cout << "Lampada destruida" << endl;
+}
+
+void Lampada::ligar() {
+    acesa = true;
+}
+
+void Lampada::desligar() {
+    acesa = false;
+}
+
+void Lampada::imprimir() {
+    cout << acesa << endl;
+}
+
+```
+
 ## Encapsulation
 
 ## Constructors and Destructors
