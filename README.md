@@ -113,7 +113,7 @@ The reference to this guide is mostly based on a discipline (PCS3111 - Laborató
 
 The complete material is available, in Portuguese, in this repository.
 
-### 10 - Examples (commented)
+## 10 - Examples (commented)
 
 The Following code shows how a class is defined in C++.
 
