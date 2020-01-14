@@ -113,9 +113,101 @@ In inheritance (we will discuss this later in other topics), it is important to 
 * `private` = access restricted only to objects from the class
 * `protected` = access restricted only to objects from the class and its derived classes
 
+`check out Example 1 on "Examples (commented)" section`
+
 ### Getters and Setter Methods
 
-### Definition: ".hpp" and ".cpp" Files
+Getters and Setters allow you to effectively protect your data. This is a technique used greatly when creating classes. For each variable, a get method will return its value and a set method will set the value.
+
+Check out the **example** below:
+
+```c++
+#include <iostream>
+using namespace std;
+
+class Employee {
+  private:
+    int salary; // The salary attribute is private, which have restricted access.
+
+  public:
+    void setSalary(int s) {
+      salary = s; 
+      // The public setSalary() method takes a parameter (s) and 
+      // assigns it to the salary attribute (salary = s).
+    }
+    int getSalary() {
+      return salary; 
+      // The public getSalary() method returns the value of 
+      // the private salary attribute.
+    }
+};
+
+// Inside main(), we create an object of the Employee class. 
+// Now we can use the setSalary() method to set the value of the 
+// private attribute to 50000. Then we call the getSalary() 
+// method on the object to return the value.
+
+int main() {
+  Employee* MrFeather;
+  MrFeather.setSalary(50000);
+  cout << MrFeather.getSalary();
+  return 0;
+}
+```
+
+### Source File Organization: ".h" and ".cpp" Files
+
+Organization may be something that we could not give so much importance for basic programs like the example above, but when we are making or we are part of a bigger project with hundereds, thousands or even millions of lines of code or classes this is the most important virtue so we can continue developing and sharing this development with other people.
+
+In C++ we organize our files in three main files, the **HEADER** files which have the extension `.h` on their names. so if the name of the file is "example" the header file's name is `example.h`. There's also the **SOURCE** files which have the extension `.cpp`, so the example's source file nasme is `example.cpp`. And finally the code which is going to be the executable program, the `main.cpp`.
+
+**NOTE:** All the .cpp files must be compiled, since they include the header files we don't need to compile the .h files
+
+The same **Example** of the topic above could be separated like this:
+
+**1. Header File**
+
+```c++
+#include <iostream>
+using namespace std;
+
+class Employee {
+  private:
+    int salary;
+
+  public:
+    void setSalary(int s); // method only declared but not implemented
+    int getSalary(); // method only declared but not implemented
+};
+```
+
+**2. Source File**
+```c++
+#include "Employee.h" // includes the 'code' of the header
+
+void setSalary(int s) {
+      salary = s;   // method implementation
+}
+int getSalary() {
+  return salary;    // method implementation
+}
+```
+
+**3. Main File**
+
+```c++
+#include "Employee.h"
+#include <iostream>
+using namespace std;
+
+int main() {
+  Employee* MrFeather;
+  MrFeather.setSalary(50000);
+  cout << MrFeather.getSalary();
+
+  return 0;
+}
+```
 
 ### Object Vector
 
@@ -125,7 +217,7 @@ In inheritance (we will discuss this later in other topics), it is important to 
 
 ## 5 - Abstract Classes and Multiple Inheritance
 
-## 6 - Defensive Programming
+## 6 - Error Handling
 
 ## 7 - Data Persistence
 
