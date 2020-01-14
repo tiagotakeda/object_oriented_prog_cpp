@@ -168,6 +168,8 @@ The same **Example** of the topic above could be separated like this:
 **1. Header File**
 
 ```c++
+#ifndef EMPLOYEE_H // ifndef directive is explained in the topic below
+#define EMPLOYEE_H // ifndef directive is explained in the topic below
 #include <iostream>
 using namespace std;
 
@@ -179,11 +181,12 @@ class Employee {
     void setSalary(int s); // method only declared but not implemented
     int getSalary(); // method only declared but not implemented
 };
+#endif // EMPLOYEE_H // ifndef directive is explained in the topic below
 ```
 
 **2. Source File**
 ```c++
-#include "Employee.h" // includes the 'code' of the header
+#include "Employee.h" // it's necessary to include the "code" of the header
 
 void setSalary(int s) {
       salary = s;   // method implementation
@@ -196,7 +199,7 @@ int getSalary() {
 **3. Main File**
 
 ```c++
-#include "Employee.h"
+#include "Employee.h" // it's necessary to include the "code" of the header
 #include <iostream>
 using namespace std;
 
@@ -209,7 +212,65 @@ int main() {
 }
 ```
 
+### #ifndef Directives
+
+The #ifndef directive has the following syntax:
+
+> #ifndef identifier newline
+
+This directive checks to see if the identifier is not currently defined.
+
+So it is very useful, if not mandatory, for our OOP files in C++, because sometimes we have to include classes which include other common classes, and it is literally a waste of time to include classes more than once (**and it does not build!**). So that's why we use ifndef directives in our files.
+
+When you use the *ifndef* directive properly it defines the class **only** if it was **NOT** already defined before.
+
+* The synthax to use the *ifndef* for a class named "example" is:
+```c++
+#ifndef EXAMPLE_H
+#define EXAMPLE_H
+
+// .
+// .
+// .
+// class definition
+// .
+// .
+// .
+
+#endif
+```
+
 ### Object Vector
+
+In C++ is possible to create vectors of any type, including of already defined and implemented classes. 
+
+##### Synthax
+
+> <"Type"> *name[Size] 
+
+#### Example
+
+Using the same example of the `employee` class, I could wirte a different `main.cpp`:
+
+```c++
+#include "Employee.h"
+#include <iostream>
+using namespace std;
+
+int main() {
+  Employee* MrFeather[2]; // creates a vector of 3 employees
+
+  MrFeather[0].setSalary(50000); // set the salary of the first employee to 50000
+  MrFeather[1].setSalary(25000); // set the salary of the second employee to 25000
+  MrFeather[2].setSalary(12500); // set the salary of the third employee to 12500
+
+  cout << MrFeather[0].getSalary(); // prints the salary of the first employee
+  cout << MrFeather[1].getSalary(); // prints the salary of the second employee
+  cout << MrFeather[2].getSalary(); // prints the salary of the third employee
+
+  return 0;
+}
+```
 
 ## 3 - Constructors and Destructors
 
