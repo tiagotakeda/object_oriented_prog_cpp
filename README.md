@@ -357,6 +357,12 @@ int main() {
 
 #### NULL
 
+#### Destructors
+
+#### Memory Allocation
+
+#### Constants
+
 ## 4 - Inheritance and Polymorphism
 
 ## 5 - Abstract Classes and Multiple Inheritance
@@ -372,6 +378,17 @@ int main() {
 The reference to this guide is mostly based on a discipline (PCS3111 - Laboratório de Programação Orientada à Objetos para Engenharia Elétrica) given by the **Computer Engineering and Digital Systems Department (PCS)** from **Escola Politécnica da Universidade de São Paulo** to Electrical Enginerring Students on their second semester. 
 
 The complete material is available, in Portuguese, in this repository.
+
+The bibliography of the material which is based the course is:
+
+* BUDD, T. **An Introduction to Object-Oriented
+Programming**. Addison-Wesley, 3rd ed. 2002.
+
+* LAFORE, R. **Object-Oriented Programming in
+C++**. Sams, 4th ed. 2002.
+
+* SAVITCH, W. **C++ Absoluto**. Pearson, 1st ed.
+2003.
 
 ## 10 - Examples (commented)
 
