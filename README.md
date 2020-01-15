@@ -400,43 +400,42 @@ C++**. Sams, 4th ed. 2002.
 
     using namespace std;
 
-    class Lampada {
+    class Lamp {
         public:
-            Lampada();
-            ~Lampada();
+            Lamp(); // constructor
+            ~Lamp(); // destructor
 
-            void ligar();
-            void desligar();
-            void imprimir();
+            void turnOn();
+            void turnOff();
+            void print();
             
         private:
-            bool acesa;
-            double potencia;
+            bool on;
+            double power;
     };
     ```
 
     Now let's see how the class' methods were implemented in this case.
 
     ```c++
-    Lampada::Lampada(){
-        acesa = false;
-        cout << "objeto construido com sucesso" << endl;
+    Lamp::Lamp(){
+        on = false;
     }
 
-    Lampada::~Lampada(){
-        cout << "Lampada destruida" << endl;
+    Lamp::~Lamp(){
+        cout << "Lamp destructed" << endl;
     }
 
-    void Lampada::ligar() {
-        acesa = true;
+    void Lamp::turnOn() {
+        on = true;
     }
 
-    void Lampada::desligar() {
-        acesa = false;
+    void Lamp::turnOff() {
+        on = false;
     }
 
-    void Lampada::imprimir() {
-        cout << acesa << endl;
+    void Lamp::print() {
+        cout << on << endl;
     }
 
     ```
