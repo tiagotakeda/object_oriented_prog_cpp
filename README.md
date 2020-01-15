@@ -387,8 +387,7 @@ Programming**. Addison-Wesley, 3rd ed. 2002.
 * LAFORE, R. **Object-Oriented Programming in
 C++**. Sams, 4th ed. 2002.
 
-* SAVITCH, W. **C++ Absoluto**. Pearson, 1st ed.
-2003.
+* SAVITCH, W. **C++ Absoluto**. Pearson, 1st ed. 2003.
 
 ## 10 - Examples (commented)
 
