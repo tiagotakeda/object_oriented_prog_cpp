@@ -274,6 +274,87 @@ int main() {
 
 ## 3 - Constructors and Destructors
 
+*Constructors* are special *class functions* (methods) which performs **initialization** of every object. The *Compiler* calls the *Constructor* whenever an object is created, allocating memory to store the object. Constructors initialize values to object members after storage is allocated to the object.
+
+Contructors are called automatically by the compiler and they also can be define **with** or **without** *Arguments*.
+It is possible to have more than one *Constructor*.
+
+*Destructors* on the other hand are (methods) used to destroy the class object.
+
+#### Constructor Declaration
+
+A constructor is basically another *method* from a *class*, the only things that differ from any other method are:
+
+* It doesn't have a return type (since it doesn't return anything)
+* It can have parameters (arguments)
+
+In C++ if the *Constructor* was not defined, the compiler defines the *Standard Constructor*.
+
+Using the same example with the `Employee class` the *Standard Constructor* defined by the *Compiler* was:
+
+```c++
+#include <iostream>
+using namespace std;
+
+class Employee {
+  private:
+    int salary;
+
+  public:
+    Employee(); // Contructor declaration
+    ~Employee(); // Destructor declaration
+    void setSalary(int s);
+    int getSalary();
+};
+```
+
+In the class above we can see that different from the `Employee.h` above, which we didn't declared niether the Constructor and Destructor, and as any other method they now have to be implemented.
+
+#### Constructor Implementation
+
+There are **two** ways to implement a *Constructor* in C++:
+
+The examples below are a version of the `Employee class` with **one** attribute (`int` `salary`).
+
+1. Option 1
+
+```c++
+Employee::Employee(int salary){
+  this->salary = salary;
+}
+```
+
+* We use `this` to differ the **attribute** from the **parameter**
+
+2. Option 2 (recommended)
+
+```c++
+Employee::Employee(int salary) : salary (salary){
+}
+```
+* It still uses the attribute's name as parameters
+  * It makes reading easier for who **uses** the constructor
+
+#### Calling Constructors
+
+To call the Constructor above (with the `salary`parameter), we should have the `main.cpp` like this:
+
+```c++
+#include "Employee.h"
+#include <iostream>
+using namespace std;
+
+int main() {
+  Employee* MrFeather(50000);
+
+  cout << MrFeather.getSalary(); // it prints 50000
+
+  return 0;
+}
+```
+
+#### NULL
+
 ## 4 - Inheritance and Polymorphism
 
 ## 5 - Abstract Classes and Multiple Inheritance
