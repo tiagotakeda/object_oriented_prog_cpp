@@ -12,6 +12,8 @@ Since it is a routine for the members to be asked to install Linux (Ubuntu 16.04
 
 If that may be an issue, you can easily follow this guide using an IDE (Codeblocks is a good starting IDE).
 
+The **Examples (commented)** section contains examples commented line by line so you may use the other topics usually as *consulting material*.
+
 ## Prerequisites
 
 * **Compilers**:

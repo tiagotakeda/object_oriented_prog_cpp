@@ -170,3 +170,4 @@ There are two types of *Memory Allocations* and usually who decides which is goi
 > Every time that something is allocated (`new`), it must be deallocated at some point (`delete`)!
 
 #### Constants
+
