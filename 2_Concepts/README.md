@@ -13,7 +13,7 @@ A class is a data structure that implements an ADT. It represents the common cha
 For example, we can think in a class called "car" and create objects that may have different characteristics, like different colors or different names, but they all have something in common, they all have 4 wheels, a motor, a gear mechanism, etc.
 
 <img
-    src="images/clssobjc.png"
+    src="https://github.com/tiagotakeda/object_oriented_prog_cpp/tree/master/images/clssobjc.png"
     alt="class representation"
 />
 
