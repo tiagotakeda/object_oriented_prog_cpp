@@ -22,16 +22,16 @@ If that may be an issue, you can easily follow this guide using an IDE (Codebloc
 
 ## Contents
 
-**1**. Definition and Paradigms
-**2**. Concepts
-**3**. Encapsulation
-**4**. Constructors and Destructors
-**5**. Inheritance and Polymorphism
-**6**. Abstract Classes and Multiple Inheritance
-**7**. Error Handling
-**8**. Data Persistence
-**9**. Namespace, Templates and Standard Libraries
-**10**. Examples (commented)
+1. Definition and Paradigms
+2. Concepts
+3. Encapsulation
+4. Constructors and Destructors
+5. Inheritance and Polymorphism
+6. Abstract Classes and Multiple Inheritance
+7. Error Handling
+8. Data Persistence
+9. Namespace, Templates and Standard Libraries
+10. Examples (commented)
 
 
 # Reference
