@@ -42,7 +42,7 @@ The reference to this guide is mostly based on a discipline (PCS3111 - Laborató
 
 The complete material is available, in Portuguese, in this repository.
 
-The bibliography of the material which is based the course is:
+The bibliography of the material is:
 
 * BUDD, T. **An Introduction to Object-Oriented
 Programming**. Addison-Wesley, 3rd ed. 2002.
