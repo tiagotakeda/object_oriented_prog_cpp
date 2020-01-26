@@ -80,6 +80,9 @@ class Vehicle{
 **2. Vehicle.cpp**
 ```c++
 #include "Vehicle.h"
+#include <iostream>
+
+using namespace std;
 
 Vehicle::Vehicle(){
     cout << "This is a vehicle." << endl;
@@ -94,7 +97,7 @@ int Vehicle::getFuelAmount(){
 }
 
 int Vehicle::getCapacity(){
-    return numberOfSeats;
+    return nPassengers;
 }
 
 void Vehicle::applyGas(){
@@ -102,11 +105,15 @@ void Vehicle::applyGas(){
     fuel -= acceleration;
 }
 
-void Vehicle::appleBreaks(){
+void Vehicle::applyBreaks(){
     acceleration--;
 }
 
 void Vehicle::setPassengers(int x){
     nPassengers = x;
+}
+
+Vehicle::~Vehicle(){
+    cout << "VEHICLE DESTROYED" << endl;
 }
 ```
