@@ -7,7 +7,7 @@ It is possible to have more than one *Constructor*.
 
 *Destructors* on the other hand are (methods) used to destroy the class object.
 
-#### Constructor Declaration
+### Constructor Declaration
 
 A constructor is basically another *method* from a *class*, the only things that differ from any other method are:
 
@@ -36,7 +36,7 @@ class Employee {
 
 In the class above we can see that different from the `Employee.h` above, which we didn't declared niether the Constructor and Destructor, and as any other method they now have to be implemented.
 
-#### Constructor Implementation
+### Constructor Implementation
 
 There are **two** ways to implement a *Constructor* in C++:
 
@@ -61,7 +61,7 @@ Employee::Employee(int salary) : salary (salary){
 * It still uses the attribute's name as parameters
   * It makes reading easier for who **uses** the constructor
 
-#### Calling Constructors
+### Calling Constructors
 
 To call the Constructor above (with the `salary`parameter), we should have the `main.cpp` like this:
 
@@ -79,7 +79,7 @@ int main() {
 }
 ```
 
-#### NULL
+### NULL
 
 The macro NULL is an implementation-defined null pointer constant, which may be:
 
@@ -90,7 +90,7 @@ Basically a pointer that points to **NO** value.
 
 If you want more info about NULL pointer check this <a href="https://en.cppreference.com/w/cpp/types/NULL">reference</a>
 
-#### Destructors
+### Destructors
 
 Similarly to the *Constructors*, there are methods called *Destrcutors*, which are called automatically when it is asked to deallocate an object. So being, a *Desctructor* must free the computational resources allocated previously by the *Object*.
 
@@ -130,7 +130,7 @@ Employee::~Employee(int salary){
 }
 ```
 
-#### Memory Management
+### Memory Management
 
 There are two types of *Memory Allocations* and usually who decides which is going to be used is the **compiler**.
 
@@ -169,7 +169,7 @@ There are two types of *Memory Allocations* and usually who decides which is goi
   
 > Every time that something is allocated (`new`), it must be deallocated at some point (`delete`)!
 
-#### Constants
+### Constants
 
 Constants refer to fixed values that the program may not alter and they are called **literals**. They are treated just like regular variables except that their values cannot be modified after their definition.
 
