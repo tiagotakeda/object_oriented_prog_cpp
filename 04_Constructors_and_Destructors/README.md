@@ -171,3 +171,15 @@ There are two types of *Memory Allocations* and usually who decides which is goi
 
 #### Constants
 
+Constants refer to fixed values that the program may not alter and they are called **literals**. They are treated just like regular variables except that their values cannot be modified after their definition.
+
+To declare a variable as a constant you just have to put `const` before the veriable:
+
+```c++
+const int number = 5;
+
+// if you try to change the value of the constant 
+// it gives you a compilation error, for example:
+
+number = 4; // COMPILATION ERROR
+```
