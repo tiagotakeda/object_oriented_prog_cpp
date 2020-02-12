@@ -163,8 +163,20 @@ Bus::Bus(){
     p = 0;
 }
 
-void setDriverName(string name){
-    
+void Bus::setDriverName(string name){
+    this->name  = name;
+}
+
+string Bus::getDriverName(){
+    return name;
+}
+
+int Bus::getTicketPrice(){
+    return p;
+}
+
+void Bus::setTicketPrice(int p){
+    this->p = p;
 }
 
 Bus::~Bus(){
