@@ -117,3 +117,57 @@ Vehicle::~Vehicle(){
     cout << "VEHICLE DESTROYED" << endl;
 }
 ```
+
+The idea here is that the `Bus` class is only to illustrate that we could specify characteristics of a Bus. The requirements and classes that you will implement will depend exclusively of your project.
+
+**3. Bus.h**
+
+```c++
+#ifndef BUS_H
+#define BUS_H
+
+#include "Vehicle.h"
+#include <string>
+
+class Bus : public Vehicle{
+    public:
+        Bus();
+        ~Bus();
+
+        void setDriverName(string name);
+        string getDriverName();
+
+        void setTicketPrice(int p);
+        int getTicketPrice();
+
+    private:
+        string name;
+        int p;
+};
+
+#endif
+```
+
+**4. Bus.cpp**
+
+```c++
+#include "Bus.h"
+#include <iostream>
+
+using namespace std;
+
+Bus::Bus(){
+    cout << "BUS CREATED" << endl;
+
+    name = "UNNAMED DRIVER";
+    p = 0;
+}
+
+void setDriverName(string name){
+    
+}
+
+Bus::~Bus(){
+    cout <<"BUS DESTROYED" << endl;
+}
+```
