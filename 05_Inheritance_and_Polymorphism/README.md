@@ -117,7 +117,7 @@ Vehicle::~Vehicle(){
 }
 ```
 
-The idea here is that the `Bus` class is only to illustrate that we could specify characteristics of a Bus. The requirements and classes that you will implement will depend exclusively of your project.
+> The idea here is that the `Bus` class is only to illustrate that we could specify characteristics of a Bus. The requirements and classes that you will implement will depend exclusively of your project.
 
 **3. Bus.h**
 
