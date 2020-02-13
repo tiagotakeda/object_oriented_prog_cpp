@@ -74,7 +74,6 @@ class Vehicle{
 };
 
 #endif // VEHICLE_H
-}
 ```
 
 **2. Vehicle.cpp**
